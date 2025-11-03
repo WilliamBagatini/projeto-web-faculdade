@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+}
+
+.links{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 30px;
+    right: 15px;
+}
+
+.links a{
+    color: white;
+}
+
+.links a:hover{
+    color: blue
+}
+
+#imag{
+    position: absolute;
+    width: 192px;
+    height: 108px;
+    left: -35px;
+    top: 20px;
+}
+
+.descricao{
+    display: flex;
+    justify-content: center;
+    background-color: #3C3C3C;
+    color: white;
+}
+
+.espacamento{
+    width: 100%;
+    height: 250px;
+}
+
+.allBox{
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    justify-content: space-around;
+    gap: 0px;
+}
+
+.box{
+    width: 500px;
+    height: 380px;
+    background-color: white;
+    color: white;
+    border-radius: 15px;
+    top: 30px;
+}
+
+.box h1{
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+    position: absolute;
+}
+
+#h1a{
+    padding-left: 142px;
+}
+
+#h1b{
+    padding-left: 175px;
+}
+
+#h1c{
+    padding-left: 105px;
+}
+
+#h1Ap911{
+    padding-left: 80px;
+}
+
+#h1Bp911{
+    padding-left: 140px;
+}
+
+#h1Cp911{
+    padding-left: 130px;
+}
+
+#h1Agt3{
+    padding-left: 175px;
+}
+
+#h1Bgt3{
+    padding-left: 180px;
+}
+
+#h1Cgt3{
+    padding-left: 145px;
+}
+
+#h1ACay{
+    padding-left: 190px;
+}
+
+#h1BCay{
+    padding-left: 168px;
+}
+
+#h1CCay{
+    padding-left: 110px;
+}
+
+.imagens{
+    width: 500px;
+    height: 380px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    
+}
+
+.imagens:hover{
+    transform: scale(1.5);
+}
+
+.rodape{
+    background-color: #3a3a3a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.rodape h2{
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.info-contato{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.coluna h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.coluna p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.coluna p:hover{
+    transform: scale(1.5);
+}
