@@ -146,70 +146,75 @@ img {
     transform: scale(1.2);
 }
 
-
 /* 
-   Tablets 900 px
+   TABLETS (até 900px)
+   
+   Escolhi 900px como breakpoint porque é aqui que o layout começa
+   a ficar apertado e o título e os links quase se encostam.
     */
 @media (max-width: 900px) {
 
-    #porscheTitulo {
-        font-size: 32px;
+    /* Centralizei o título para ele não ficar brigando por espaço
+       com o menu quando a tela começa a diminuir */
+    #porscheTitulo{
         width: 100%;
-        margin-top: 10px;
+        text-align: center;
+        font-size: 32px; /* diminui só um pouco para não quebrar linha */
     }
 
-    .links {
+    /* Aqui deixei os links centralizados porque na lateral direita
+       eles começavam a ficar apertados e corridos. Assim fica mais limpo. */
+    .links{
         width: 100%;
         justify-content: center;
-        font-size: 22px;
         margin-top: 15px;
-    }
-
-    .descricao {
-        font-size: 24px;
+        font-size: 22px; /* tamanho menor para caber melhor */
     }
 }
 
+
+
 /* 
-   Celulares 600 px
+    CELULARES (até 600px)
+   
+   Esse breakpoint escolhi porque abaixo disso o layout vira mobile mesmo,
+   então precisei reorganizar quase tudo para ficar confortável para tocar.
     */
 @media (max-width: 600px) {
 
-    .cabecalho {
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .logo {
+    /* Diminui a logo porque estava ocupando muito espaço no topo */
+    .logo{
         width: 90px;
     }
 
-    #porscheTitulo {
-        font-size: 26px;
+    /* Título menor para evitar quebrar em duas linhas no celular */
+    #porscheTitulo{
+        font-size: 28px;
     }
 
-    .links {
+    /* Aqui transformei o menu em coluna porque em linha ficava
+       muito apertado e os links começavam a sobrepor.
+       Em coluna fica mais moderno e fácil de clicar. */
+    .links{
         flex-direction: column;
-        gap: 12px;
+        align-items: center;
+        gap: 10px; /* coloquei esse gap porque no celular o dedo precisa de espaço */
         font-size: 20px;
     }
 
-    .descricao {
-        font-size: 20px;
-        padding: 25px 10px;
+    /* Reduzi o tamanho da frase de destaque para caber sem overflow */
+    #responsivo{
+        font-size: 24px;
     }
 
-    .espacamento {
-        height: 100px;
+    /* Como no celular o scroll fica grande, reduzi o espaço vazio
+       para deixar a navegação mais dinâmica */
+    .espacamento{
+        height: 120px;
     }
 
-    .info-contato {
+    /* Diminuí o espaçamento entre as colunas do rodapé pra ficar mais compacto */
+    .info-contato{
         gap: 30px;
-    }
-
-    .box h1 {
-        font-size: 22px;
     }
 }
